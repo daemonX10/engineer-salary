@@ -1,0 +1,16 @@
+Optuna Summary: gradientboosting
+TS: 20250425_181848
+Best Trial: 32
+Score: 0.72852
+
+Params:
+{
+    "n_estimators": 850,
+    "learning_rate": 0.014942566334326376,
+    "max_depth": 6,
+    "min_samples_split": 26,
+    "min_samples_leaf": 10,
+    "subsample": 0.6792287742939209,
+    "max_features": "log2",
+    "min_weight_fraction_leaf": 0.008063212389026322
+}
