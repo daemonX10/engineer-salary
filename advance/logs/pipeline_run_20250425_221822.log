@@ -1,0 +1,122 @@
+2025-04-25 22:18:22,172 - INFO - --- Starting Complete Pipeline Run --- Timestamp: 20250425_221822 ---
+2025-04-25 22:18:22,173 - INFO - Pipeline Config: Combined FE, Scaling=True, FeatSelect=True (Thresh=mean), CV Thresh=0.72, n_jobs=16 used, Class Weights Enabled, Const Cols Kept
+2025-04-25 22:18:22,174 - INFO - Logging detailed output to: logs/pipeline_run_20250425_221822.log
+2025-04-25 22:18:22,174 - INFO - Loading data...
+2025-04-25 22:18:22,267 - INFO - Train shape: (1280, 317), Test shape: (854, 316)
+2025-04-25 22:18:22,267 - INFO - Found 39 unique states and 5 unique feature_1 values.
+2025-04-25 22:18:22,267 - INFO - Preprocessing training data (using combined logic)...
+2025-04-25 22:18:22,283 - INFO - Starting preprocessing (Combined Logic). Is training: True
+2025-04-25 22:18:22,283 - INFO - Target 'salary_category' label encoded.
+2025-04-25 22:18:22,283 - INFO - Saved label encoder and mapping.
+2025-04-25 22:18:22,283 - INFO - Initial cleaning: Numerical and Boolean Features...
+2025-04-25 22:18:22,349 - WARNING - Col 'feature_10' has non-0/1 vals (834). Treat as numeric, impute median.
+2025-04-25 22:18:22,349 - INFO - Starting Feature Engineering...
+2025-04-25 22:18:22,383 - INFO - Fit/saved TE for job_title_grouped
+2025-04-25 22:18:22,400 - INFO - Processed 'job_title'.
+2025-04-25 22:18:22,421 - INFO - Processed 'job_posted_date'.
+2025-04-25 22:18:22,429 - INFO - Added bin f9.
+2025-04-25 22:18:22,431 - INFO - Added: feature_2_9_interaction
+2025-04-25 22:18:22,434 - INFO - Added transforms f2 (sq, sqrt, bin).
+2025-04-25 22:18:22,450 - INFO - Added bool aggs.
+2025-04-25 22:18:22,450 - INFO - Added: feature_10_8_interaction
+2025-04-25 22:18:22,450 - INFO - Added new interactions: ['feat2_job_title_encoded', 'feat2_boolsum', 'feat2_recency', 'job_title_encoded_recency']
+2025-04-25 22:18:22,517 - INFO - Applying PCA (n=15) to job desc...
+2025-04-25 22:18:22,549 - INFO - Fit/saved PCA.
+2025-04-25 22:18:22,566 - INFO - Finished job desc features.
+2025-04-25 22:18:22,566 - INFO - Applying manual OHE for 'job_state' (39 unique).
+2025-04-25 22:18:22,566 - INFO - Applying manual OHE for 'feature_1' (5 unique).
+2025-04-25 22:18:22,566 - INFO - Final cleanup and column alignment...
+2025-04-25 22:18:22,583 - WARNING - Col 'is_senior' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,583 - WARNING - Col 'is_junior' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,583 - WARNING - Col 'is_developer' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,583 - WARNING - Col 'is_specialist' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,583 - INFO - Eng col 'feature_9_bin' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_CO' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_MD' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_PA' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_AK' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_TN' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_NV' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_AR' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_UT' low card (nunique=2) in train.
+2025-04-25 22:18:22,583 - INFO - Eng col 'state_LA' low card (nunique=2) in train.
+2025-04-25 22:18:22,598 - INFO - Eng col 'state_MN' low card (nunique=2) in train.
+2025-04-25 22:18:22,598 - INFO - Eng col 'state_DC' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_CA' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_FL' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_VA' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_MA' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_NY' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_AZ' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_IA' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_TX' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_NJ' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_CT' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - WARNING - Col 'state_RI' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_IN' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_AL' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - WARNING - Col 'state_KS' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_SC' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_OK' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_MO' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_WA' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_OH' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - WARNING - Col 'state_WY' constant (nunique=1) in train. Engineered: True. Keeping col.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_MI' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_SD' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_OR' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_IL' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_NM' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_GA' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_NC' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'state_KY' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'feat1_A' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'feat1_D' low card (nunique=2) in train.
+2025-04-25 22:18:22,600 - INFO - Eng col 'feat1_B' low card (nunique=2) in train.
+2025-04-25 22:18:22,615 - INFO - Eng col 'feat1_E' low card (nunique=2) in train.
+2025-04-25 22:18:22,616 - INFO - Eng col 'feat1_C' low card (nunique=2) in train.
+2025-04-25 22:18:22,616 - INFO - Saved 100 feature names (const cols NOT dropped).
+2025-04-25 22:18:22,616 - INFO - Preprocessing train done. Shape: (1280, 100). Time: 0.33s
+2025-04-25 22:18:22,616 - INFO - Train preprocess done. Initial Feats: 100
+2025-04-25 22:18:22,616 - INFO - Splitting data (80/20)...
+2025-04-25 22:18:22,616 - INFO - Train (Pre-scale): (1024, 100), Val (Pre-scale): (256, 100)
+2025-04-25 22:18:22,616 - INFO - Applying StandardScaler...
+2025-04-25 22:18:22,633 - INFO - Scaler saved: scalers/scaler_20250425_221822.joblib
+2025-04-25 22:18:22,633 - INFO - Preprocessing test data (using combined logic)...
+2025-04-25 22:18:22,633 - INFO - Starting preprocessing (Combined Logic). Is training: False
+2025-04-25 22:18:22,633 - INFO - Loaded LE: label_encoder_20250425_221822.joblib
+2025-04-25 22:18:22,633 - INFO - Initial cleaning: Numerical and Boolean Features...
+2025-04-25 22:18:22,700 - WARNING - Col 'feature_10' has non-0/1 vals (540). Treat as numeric, impute median.
+2025-04-25 22:18:22,700 - INFO - Starting Feature Engineering...
+2025-04-25 22:18:22,700 - INFO - Loaded TE: features/job_title_encoder_20250425_221822.joblib
+2025-04-25 22:18:22,719 - INFO - Processed 'job_title'.
+2025-04-25 22:18:22,719 - INFO - Processed 'job_posted_date'.
+2025-04-25 22:18:22,719 - INFO - Added bin f9.
+2025-04-25 22:18:22,719 - INFO - Added: feature_2_9_interaction
+2025-04-25 22:18:22,719 - INFO - Added transforms f2 (sq, sqrt, bin).
+2025-04-25 22:18:22,733 - INFO - Added bool aggs.
+2025-04-25 22:18:22,735 - INFO - Added: feature_10_8_interaction
+2025-04-25 22:18:22,735 - INFO - Added new interactions: ['feat2_job_title_encoded', 'feat2_boolsum', 'feat2_recency', 'job_title_encoded_recency']
+2025-04-25 22:18:22,766 - INFO - Applying PCA (n=15) to job desc...
+2025-04-25 22:18:22,783 - INFO - Loaded PCA: features/job_desc_pca_20250425_221822.joblib
+2025-04-25 22:18:22,800 - INFO - Finished job desc features.
+2025-04-25 22:18:22,800 - INFO - Applying manual OHE for 'job_state' (39 unique).
+2025-04-25 22:18:22,800 - INFO - Applying manual OHE for 'feature_1' (5 unique).
+2025-04-25 22:18:22,800 - INFO - Final cleanup and column alignment...
+2025-04-25 22:18:22,822 - INFO - Preprocessing test done. Shape: (854, 100). Time: 0.19s
+2025-04-25 22:18:22,822 - INFO - Test columns aligned.
+2025-04-25 22:18:22,822 - INFO - Scaling test data...
+2025-04-25 22:18:22,833 - INFO - Test preprocess & scale done. Shape: (854, 100)
+2025-04-25 22:18:22,833 - INFO - Performing feature selection (Threshold: mean)...
+2025-04-25 22:18:22,833 - INFO - Fitting RF for feature selection...
+2025-04-25 22:18:23,024 - INFO - Feat selection removed 60 features. Selected 40.
+2025-04-25 22:18:23,024 - INFO - Selection applied to train/val/test partitions.
+2025-04-25 22:18:23,024 - INFO - Data shapes post-scaling/selection: Train=(1024, 40), Val=(256, 40), Test=(854, 40)
+2025-04-25 22:18:23,024 - INFO - Number of features used in modeling: 40
+2025-04-25 22:18:23,024 - INFO - --- Optimizing models (Class Weights Enabled Where Applicable) ---
+2025-04-25 22:18:23,024 - INFO - Minimum CV score threshold for qualification: 0.72
+2025-04-25 22:18:23,024 - INFO - Optimization Order: ['adaboost', 'randomforest', 'extratrees', 'gradientboosting', 'catboost', 'xgboost', 'lightgbm']
+2025-04-25 22:18:23,024 - INFO - --- Optimizing adaboost (100 trials) ---
+2025-04-25 22:18:23,024 - INFO - Starting adaboost optimization (100 trials)...
+2025-04-25 22:18:23,024 - INFO - Optuna timeout for adaboost: 3600s.
+2025-04-25 22:18:23,483 - INFO - Setting Optuna timeout 3600s.
