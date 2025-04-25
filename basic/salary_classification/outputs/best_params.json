@@ -1,0 +1,51 @@
+{
+    "RandomForest": {
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_split": 10,
+        "min_samples_leaf": 1,
+        "max_features": "log2",
+        "bootstrap": true,
+        "class_weight": null
+    },
+    "GradientBoosting": {
+        "n_estimators": 250,
+        "learning_rate": 0.0635546397325796,
+        "max_depth": 9,
+        "min_samples_split": 5,
+        "min_samples_leaf": 9,
+        "subsample": 0.664004677970005,
+        "max_features": null
+    },
+    "CatBoost": {
+        "iterations": 500,
+        "learning_rate": 0.13117602031825107,
+        "depth": 7,
+        "l2_leaf_reg": 4.864505363104688,
+        "border_count": 65,
+        "bagging_temperature": 0.22839910358238813,
+        "random_strength": 0.5671202352106688,
+        "grow_policy": "Depthwise"
+    },
+    "ExtraTrees": {
+        "n_estimators": 450,
+        "max_depth": 39,
+        "min_samples_split": 12,
+        "min_samples_leaf": 10,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced_subsample"
+    },
+    "MLP": {
+        "hidden_layer_sizes": [
+            300,
+            150
+        ],
+        "activation": "tanh",
+        "solver": "adam",
+        "alpha": 0.0031271008378470867,
+        "learning_rate": "adaptive",
+        "learning_rate_init": 0.00455168180921161,
+        "max_iter": 368
+    }
+}

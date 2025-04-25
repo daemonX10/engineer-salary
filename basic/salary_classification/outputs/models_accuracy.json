@@ -1,0 +1,23 @@
+{
+    "RandomForest": {
+        "accuracy": 0.69609375
+    },
+    "GradientBoosting": {
+        "accuracy": 0.7109375
+    },
+    "XGBoost": {
+        "accuracy": 0.715625
+    },
+    "LightGBM": {
+        "accuracy": 0.725
+    },
+    "CatBoost": {
+        "accuracy": 0.70
+    },
+    "ExtraTrees": {
+        "accuracy": 0.7078125
+    },
+    "MLP": {
+        "accuracy": 0.66875
+    }
+}

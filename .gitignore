@@ -1,0 +1,7 @@
+superNova
+*.sublime-project
+**/superNova/**
+**/**.csv
+**/**.joblib
+**/**.pkl
+**/**.parquet

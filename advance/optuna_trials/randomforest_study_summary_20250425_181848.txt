@@ -1,0 +1,19 @@
+Optuna Summary: randomforest
+TS: 20250425_181848
+Best Trial: 21
+Score: 0.72558
+
+Params:
+{
+    "class_weight": {
+        "0": 1.5,
+        "1": 1.0,
+        "2": 1.5
+    },
+    "n_estimators": 1300,
+    "max_depth": 42,
+    "min_samples_split": 6,
+    "min_samples_leaf": 1,
+    "max_features": 0.7,
+    "criterion": "gini"
+}

@@ -1,0 +1,16 @@
+Optuna Summary: logistic
+TS: 20250425_181848
+Best Trial: 23
+Score: 0.66698
+
+Params:
+{
+    "class_weight": {
+        "0": 1.4,
+        "1": 1.0,
+        "2": 1.4
+    },
+    "penalty": "l1",
+    "C": 280.64049788313935,
+    "max_iter": 555
+}

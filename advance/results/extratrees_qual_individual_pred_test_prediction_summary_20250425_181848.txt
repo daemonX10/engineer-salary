@@ -1,0 +1,11 @@
+Test Prediction Summary
+======================
+Model Name: extratrees_qual_individual_pred
+Model Class: ExtraTreesClassifier
+Timestamp: 20250425_181848
+Total Predictions: 854
+
+Distribution:
+- High: 348 (40.75%)
+- Low: 228 (26.70%)
+- Medium: 278 (32.55%)

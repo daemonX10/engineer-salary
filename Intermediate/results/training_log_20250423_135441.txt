@@ -1,0 +1,15 @@
+Training Run: 20250423_135441
+
+=== Starting Training Pipeline ===
+
+Training data shape: (1280, 207)
+Test data shape: (854, 207)
+
+Class distribution after resampling: [470 464 467]
+
+=== Prediction Distribution ===
+Low       849
+High        4
+Medium      1
+
+Submission saved to submissions/solution_format_20250423_135441.csv

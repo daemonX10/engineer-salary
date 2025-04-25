@@ -1,0 +1,13 @@
+Optuna Summary: adaboost
+TS: 20250425_181848
+Best Trial: 4
+Score: 0.72264
+
+Params:
+{
+    "base_estimator_max_depth": 4,
+    "class_weight_choice": "balanced",
+    "n_estimators": 300,
+    "learning_rate": 0.8758299467250618,
+    "class_weight_info": "balanced"
+}
