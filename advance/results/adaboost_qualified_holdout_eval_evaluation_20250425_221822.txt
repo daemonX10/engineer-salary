@@ -1,0 +1,22 @@
+Model Evaluation Summary
+=========================
+Model Name: adaboost_qualified_holdout_eval
+Timestamp: 20250425_221822
+Accuracy: 0.77734
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        High       0.74      0.79      0.76       100
+         Low       0.90      0.88      0.89        84
+      Medium       0.69      0.64      0.66        72
+
+    accuracy                           0.78       256
+   macro avg       0.78      0.77      0.77       256
+weighted avg       0.78      0.78      0.78       256
+
+
+Confusion Matrix:
+[[79  3 18]
+ [ 7 74  3]
+ [21  5 46]]

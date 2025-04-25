@@ -1,0 +1,22 @@
+Model Evaluation Summary
+=========================
+Model Name: extratrees_qualified_holdout_eval
+Timestamp: 20250425_221822
+Accuracy: 0.75781
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        High       0.71      0.80      0.75       100
+         Low       0.89      0.86      0.87        84
+      Medium       0.68      0.58      0.63        72
+
+    accuracy                           0.76       256
+   macro avg       0.76      0.75      0.75       256
+weighted avg       0.76      0.76      0.76       256
+
+
+Confusion Matrix:
+[[80  3 17]
+ [ 9 72  3]
+ [24  6 42]]

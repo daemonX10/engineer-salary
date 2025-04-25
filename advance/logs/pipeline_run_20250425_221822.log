@@ -120,3 +120,151 @@
 2025-04-25 22:18:23,024 - INFO - Starting adaboost optimization (100 trials)...
 2025-04-25 22:18:23,024 - INFO - Optuna timeout for adaboost: 3600s.
 2025-04-25 22:18:23,483 - INFO - Setting Optuna timeout 3600s.
+2025-04-25 22:18:35,598 - WARNING - CV fold 1 VAL ERROR adaboost trial 1: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:18:35,665 - WARNING - CV fold 1 VAL ERROR adaboost trial 2: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:18:35,748 - WARNING - CV fold 1 VAL ERROR adaboost trial 3: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:19:41,194 - WARNING - CV fold 1 VAL ERROR adaboost trial 7: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:20:55,712 - WARNING - CV fold 1 VAL ERROR adaboost trial 9: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:20:55,802 - WARNING - CV fold 1 VAL ERROR adaboost trial 10: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:22:27,373 - WARNING - CV fold 1 VAL ERROR adaboost trial 13: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:22:27,449 - WARNING - CV fold 1 VAL ERROR adaboost trial 14: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:24:35,964 - WARNING - CV fold 1 VAL ERROR adaboost trial 18: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:24:36,047 - WARNING - CV fold 1 VAL ERROR adaboost trial 19: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:29:20,207 - WARNING - CV fold 1 VAL ERROR adaboost trial 26: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:29:20,290 - WARNING - CV fold 1 VAL ERROR adaboost trial 27: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:29:20,373 - WARNING - CV fold 1 VAL ERROR adaboost trial 28: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:33:05,253 - WARNING - CV fold 1 VAL ERROR adaboost trial 34: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:34:10,001 - WARNING - CV fold 1 VAL ERROR adaboost trial 36: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:34:10,083 - WARNING - CV fold 1 VAL ERROR adaboost trial 37: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:34:19,114 - WARNING - CV fold 1 VAL ERROR adaboost trial 39: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:40:57,878 - WARNING - CV fold 1 VAL ERROR adaboost trial 46: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:40:57,975 - WARNING - CV fold 1 VAL ERROR adaboost trial 47: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:43:18,316 - WARNING - CV fold 1 VAL ERROR adaboost trial 50: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:50:47,811 - WARNING - CV fold 1 VAL ERROR adaboost trial 57: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 22:50:47,899 - WARNING - CV fold 1 VAL ERROR adaboost trial 58: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 22:50:47,991 - WARNING - CV fold 1 VAL ERROR adaboost trial 59: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:04:45,800 - WARNING - CV fold 1 VAL ERROR adaboost trial 70: The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.
+2025-04-25 23:17:15,851 - WARNING - CV fold 1 VAL ERROR adaboost trial 75: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:22:10,378 - INFO - Opt complete adaboost. Best CV score: 0.73339. Best params: {'base_estimator_max_depth': 6, 'class_weight_choice': 'balanced', 'n_estimators': 1000, 'learning_rate': 0.9652905807170493, 'algorithm': 'SAMME'}
+2025-04-25 23:22:10,393 - INFO - Saved Optuna summary: optuna_trials/adaboost_study_summary_20250425_221822.txt
+2025-04-25 23:22:10,393 - INFO - Instantiating final adaboost model...
+2025-04-25 23:22:10,393 - INFO - Reconstruct AdaBoost DT(max_depth=6, class_weight=balanced) using SAMME
+2025-04-25 23:22:10,393 - INFO - Fitting final adaboost model...
+2025-04-25 23:23:24,018 - INFO - Final adaboost fitted in 73.62s.
+2025-04-25 23:23:24,018 - INFO - Saving final adaboost model...
+2025-04-25 23:23:24,828 - INFO - Saved final adaboost via joblib: models/adaboost_20250425_221822.joblib
+2025-04-25 23:23:24,828 - INFO - Attempting calibration for adaboost...
+2025-04-25 23:25:08,320 - INFO - Saved calibrated model: calibrated_models/adaboost_calibrated_20250425_221822.joblib
+2025-04-25 23:25:08,320 - INFO - Saving importance adaboost...
+2025-04-25 23:25:09,951 - INFO - Saved importance plot: plots\adaboost_feature_importance_20250425_221822.png
+2025-04-25 23:25:09,969 - INFO - Saved importance csv: results\adaboost_feature_importance_20250425_221822.csv
+2025-04-25 23:25:09,969 - INFO - Qualification Check for adaboost: final_model exists? True, best_cv_score=0.7333859, threshold=0.72, comparison result: True
+2025-04-25 23:25:09,969 - INFO - +++ QUALIFIED: adaboost (CV Score: 0.73339)
+2025-04-25 23:25:09,969 - INFO - Evaluating model 'adaboost_qualified_holdout_eval'...
+2025-04-25 23:25:10,500 - INFO - Evaluation Results for 'adaboost_qualified_holdout_eval':
+2025-04-25 23:25:10,502 - INFO -   Accuracy: 0.77734
+2025-04-25 23:25:10,502 - INFO - Saved evaluation summary: results\adaboost_qualified_holdout_eval_evaluation_20250425_221822.txt
+2025-04-25 23:25:10,984 - INFO - Saved confusion matrix plot: plots\adaboost_qualified_holdout_eval_confusion_matrix_20250425_221822.png
+2025-04-25 23:25:10,984 - INFO - Hold-out Acc (adaboost): 0.77734
+2025-04-25 23:25:10,984 - INFO - --- Generating individual predictions for adaboost ---
+2025-04-25 23:25:10,984 - INFO - Generating test predictions using adaboost_qual_individual_pred...
+2025-04-25 23:25:11,683 - INFO - Saved submission: submissions\solution_adaboost_qual_individual_pred_20250425_221822.csv
+2025-04-25 23:25:11,683 - INFO - Test prediction distribution for 'adaboost_qual_individual_pred': {'Medium': 302, 'High': 300, 'Low': 252}
+2025-04-25 23:25:11,699 - INFO - Saved test prediction summary: results\adaboost_qual_individual_pred_test_prediction_summary_20250425_221822.txt
+2025-04-25 23:25:11,700 - INFO - Individual prediction file saved for adaboost.
+2025-04-25 23:25:11,701 - INFO - --- Optimizing randomforest (100 trials) ---
+2025-04-25 23:25:11,701 - INFO - Starting randomforest optimization (100 trials)...
+2025-04-25 23:25:11,701 - INFO - Optuna timeout for randomforest: 7200s.
+2025-04-25 23:25:12,089 - INFO - Setting Optuna timeout 7200s.
+2025-04-25 23:25:12,307 - WARNING - CV fold 1 VAL ERROR randomforest trial 0: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:25:46,161 - WARNING - CV fold 1 VAL ERROR randomforest trial 2: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:25:46,695 - WARNING - CV fold 1 VAL ERROR randomforest trial 3: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:25:46,861 - WARNING - CV fold 1 VAL ERROR randomforest trial 4: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:25:47,078 - WARNING - CV fold 1 VAL ERROR randomforest trial 5: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:26:42,080 - WARNING - CV fold 1 VAL ERROR randomforest trial 7: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:29:04,724 - WARNING - CV fold 1 VAL ERROR randomforest trial 15: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:30:37,203 - WARNING - CV fold 1 VAL ERROR randomforest trial 20: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:31:45,423 - WARNING - CV fold 1 VAL ERROR randomforest trial 25: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:32:51,493 - WARNING - CV fold 1 VAL ERROR randomforest trial 29: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:32:51,844 - WARNING - CV fold 1 VAL ERROR randomforest trial 30: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:34:06,247 - WARNING - CV fold 1 VAL ERROR randomforest trial 34: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:34:06,602 - WARNING - CV fold 1 VAL ERROR randomforest trial 35: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:37:42,382 - WARNING - CV fold 1 VAL ERROR randomforest trial 40: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:44:27,187 - WARNING - CV fold 1 VAL ERROR randomforest trial 65: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:44:27,534 - WARNING - CV fold 1 VAL ERROR randomforest trial 66: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:44:27,932 - WARNING - CV fold 1 VAL ERROR randomforest trial 67: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:49:24,047 - WARNING - CV fold 1 VAL ERROR randomforest trial 75: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:49:24,355 - WARNING - CV fold 1 VAL ERROR randomforest trial 76: The classes, [0, 1, 2], are not in class_weight
+2025-04-25 23:49:24,666 - WARNING - CV fold 1 VAL ERROR randomforest trial 77: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:01:26,823 - INFO - Opt complete randomforest. Best CV score: 0.71385. Best params: {'class_weight': 'balanced', 'n_estimators': 400, 'max_depth': 58, 'min_samples_split': 13, 'min_samples_leaf': 2, 'max_features': 0.6, 'criterion': 'entropy', 'min_impurity_decrease': 0.0033186173606330567}
+2025-04-26 00:01:26,828 - INFO - Saved Optuna summary: optuna_trials/randomforest_study_summary_20250425_221822.txt
+2025-04-26 00:01:26,829 - INFO - Instantiating final randomforest model...
+2025-04-26 00:01:26,830 - INFO - RF final model using class_weight=balanced
+2025-04-26 00:01:26,831 - INFO - Fitting final randomforest model...
+2025-04-26 00:01:27,444 - INFO - Final randomforest fitted in 0.61s.
+2025-04-26 00:01:27,444 - INFO - Saving final randomforest model...
+2025-04-26 00:01:27,498 - INFO - Saved final randomforest via joblib: models/randomforest_20250425_221822.joblib
+2025-04-26 00:01:27,499 - INFO - Attempting calibration for randomforest...
+2025-04-26 00:01:30,398 - INFO - Saved calibrated model: calibrated_models/randomforest_calibrated_20250425_221822.joblib
+2025-04-26 00:01:30,398 - INFO - Saving importance randomforest...
+2025-04-26 00:01:30,750 - INFO - Saved importance plot: plots\randomforest_feature_importance_20250425_221822.png
+2025-04-26 00:01:30,753 - INFO - Saved importance csv: results\randomforest_feature_importance_20250425_221822.csv
+2025-04-26 00:01:30,756 - INFO - Qualification Check for randomforest: final_model exists? True, best_cv_score=0.7138546, threshold=0.72, comparison result: False
+2025-04-26 00:01:30,756 - INFO - --- NOT QUALIFIED: randomforest (CV Score: 0.71385 ) ---
+2025-04-26 00:01:30,757 - INFO - --- Optimizing extratrees (100 trials) ---
+2025-04-26 00:01:30,757 - INFO - Starting extratrees optimization (100 trials)...
+2025-04-26 00:01:30,758 - INFO - Optuna timeout for extratrees: 7200s.
+2025-04-26 00:01:30,907 - INFO - Setting Optuna timeout 7200s.
+2025-04-26 00:01:37,070 - WARNING - CV fold 1 VAL ERROR extratrees trial 1: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:01:37,139 - WARNING - CV fold 1 VAL ERROR extratrees trial 2: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:01:37,225 - WARNING - CV fold 1 VAL ERROR extratrees trial 3: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:02:02,876 - WARNING - CV fold 1 VAL ERROR extratrees trial 9: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:02:36,768 - WARNING - CV fold 1 VAL ERROR extratrees trial 16: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:02:36,866 - WARNING - CV fold 1 VAL ERROR extratrees trial 17: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:03:18,009 - WARNING - CV fold 1 VAL ERROR extratrees trial 24: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:03:18,144 - WARNING - CV fold 1 VAL ERROR extratrees trial 25: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:03:28,567 - WARNING - CV fold 1 VAL ERROR extratrees trial 27: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:03:38,655 - WARNING - CV fold 1 VAL ERROR extratrees trial 29: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:04:12,910 - WARNING - CV fold 1 VAL ERROR extratrees trial 33: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:04:38,649 - WARNING - CV fold 1 VAL ERROR extratrees trial 37: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:04:46,798 - WARNING - CV fold 1 VAL ERROR extratrees trial 39: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:05:40,041 - WARNING - CV fold 1 VAL ERROR extratrees trial 48: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:05:46,017 - WARNING - CV fold 1 VAL ERROR extratrees trial 50: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:06:22,834 - WARNING - CV fold 1 VAL ERROR extratrees trial 57: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:07:11,972 - WARNING - CV fold 1 VAL ERROR extratrees trial 67: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:07:22,543 - WARNING - CV fold 1 VAL ERROR extratrees trial 70: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:07:39,139 - WARNING - CV fold 1 VAL ERROR extratrees trial 75: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:08:29,568 - WARNING - CV fold 1 VAL ERROR extratrees trial 86: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:08:48,200 - WARNING - CV fold 1 VAL ERROR extratrees trial 90: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:09:02,047 - WARNING - CV fold 1 VAL ERROR extratrees trial 95: The classes, [0, 1, 2], are not in class_weight
+2025-04-26 00:09:28,593 - INFO - Opt complete extratrees. Best CV score: 0.72753. Best params: {'class_weight': 'balanced_subsample', 'n_estimators': 1200, 'max_depth': 56, 'min_samples_split': 6, 'min_samples_leaf': 1, 'max_features': 0.8, 'bootstrap': True, 'criterion': 'gini', 'min_impurity_decrease': 0.00014096653737114744}
+2025-04-26 00:09:28,593 - INFO - Saved Optuna summary: optuna_trials/extratrees_study_summary_20250425_221822.txt
+2025-04-26 00:09:28,593 - INFO - Instantiating final extratrees model...
+2025-04-26 00:09:28,593 - INFO - ET final model using class_weight=balanced_subsample
+2025-04-26 00:09:28,593 - INFO - Fitting final extratrees model...
+2025-04-26 00:09:30,142 - INFO - Final extratrees fitted in 1.55s.
+2025-04-26 00:09:30,142 - INFO - Saving final extratrees model...
+2025-04-26 00:09:30,310 - INFO - Saved final extratrees via joblib: models/extratrees_20250425_221822.joblib
+2025-04-26 00:09:30,310 - INFO - Attempting calibration for extratrees...
+2025-04-26 00:09:35,731 - INFO - Saved calibrated model: calibrated_models/extratrees_calibrated_20250425_221822.joblib
+2025-04-26 00:09:35,732 - INFO - Saving importance extratrees...
+2025-04-26 00:09:36,191 - INFO - Saved importance plot: plots\extratrees_feature_importance_20250425_221822.png
+2025-04-26 00:09:36,191 - INFO - Saved importance csv: results\extratrees_feature_importance_20250425_221822.csv
+2025-04-26 00:09:36,194 - INFO - Qualification Check for extratrees: final_model exists? True, best_cv_score=0.7275275, threshold=0.72, comparison result: True
+2025-04-26 00:09:36,194 - INFO - +++ QUALIFIED: extratrees (CV Score: 0.72753)
+2025-04-26 00:09:36,194 - INFO - Evaluating model 'extratrees_qualified_holdout_eval'...
+2025-04-26 00:09:36,359 - INFO - Evaluation Results for 'extratrees_qualified_holdout_eval':
+2025-04-26 00:09:36,359 - INFO -   Accuracy: 0.75781
+2025-04-26 00:09:36,359 - INFO - Saved evaluation summary: results\extratrees_qualified_holdout_eval_evaluation_20250425_221822.txt
+2025-04-26 00:09:36,456 - INFO - Saved confusion matrix plot: plots\extratrees_qualified_holdout_eval_confusion_matrix_20250425_221822.png
+2025-04-26 00:09:36,457 - INFO - Hold-out Acc (extratrees): 0.75781
+2025-04-26 00:09:36,457 - INFO - --- Generating individual predictions for extratrees ---
+2025-04-26 00:09:36,457 - INFO - Generating test predictions using extratrees_qual_individual_pred...
+2025-04-26 00:09:36,618 - INFO - Saved submission: submissions\solution_extratrees_qual_individual_pred_20250425_221822.csv
+2025-04-26 00:09:36,618 - INFO - Test prediction distribution for 'extratrees_qual_individual_pred': {'High': 352, 'Medium': 270, 'Low': 232}
+2025-04-26 00:09:36,618 - INFO - Saved test prediction summary: results\extratrees_qual_individual_pred_test_prediction_summary_20250425_221822.txt
+2025-04-26 00:09:36,618 - INFO - Individual prediction file saved for extratrees.
+2025-04-26 00:09:36,623 - INFO - --- Optimizing gradientboosting (100 trials) ---
+2025-04-26 00:09:36,623 - INFO - Starting gradientboosting optimization (100 trials)...
+2025-04-26 00:09:36,624 - INFO - Optuna timeout for gradientboosting: 7200s.
+2025-04-26 00:09:36,792 - INFO - Setting Optuna timeout 7200s.

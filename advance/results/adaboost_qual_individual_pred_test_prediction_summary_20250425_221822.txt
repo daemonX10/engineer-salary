@@ -1,0 +1,11 @@
+Test Prediction Summary
+======================
+Model Name: adaboost_qual_individual_pred
+Model Class: AdaBoostClassifier
+Timestamp: 20250425_221822
+Total Predictions: 854
+
+Distribution:
+- High: 300 (35.13%)
+- Low: 252 (29.51%)
+- Medium: 302 (35.36%)
