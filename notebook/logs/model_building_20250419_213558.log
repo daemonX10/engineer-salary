@@ -1,6 +1,0 @@
-2025-04-19 21:37:00,402 - INFO - Starting model building process...
-2025-04-19 21:37:00,402 - INFO - Loading and preparing data...
-2025-04-19 21:37:00,521 - INFO - Training data shape: (1280, 317)
-2025-04-19 21:37:00,522 - INFO - Test data shape: (854, 316)
-2025-04-19 21:37:00,523 - ERROR - Error loading data: "['salary'] not found in axis"
-2025-04-19 21:37:00,523 - ERROR - Error in main process: "['salary'] not found in axis"
